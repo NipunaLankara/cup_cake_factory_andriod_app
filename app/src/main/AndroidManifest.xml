@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CupCake_Factory_Final"
+        tools:targetApi="31">
+        <activity
+            android:name="UIClasses.Member.ViewMemberOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Member.MemberHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Admin.ViewOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Member.OrderCupcakeActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Member.BuyProductActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Member.ViewCupcakeItemActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Admin.AddNewCupcakeActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Admin.EditCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Admin.AddNewCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Admin.CupcakesManageActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Admin.CategoryManageActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Member.MemberActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.Admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.CreateNewAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name="UIClasses.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

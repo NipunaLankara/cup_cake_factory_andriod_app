@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="UIClasses.Admin.AdminActivity"
+    android:orientation="vertical"
+    android:background="@color/c2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/b1">
+
+
+        <Button
+            android:id="@+id/btn_A_Back"
+            android:layout_width="162dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/btn_bg2"
+            android:text="log out"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="316dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="WELCOME TO ADMIN INTERFACE"
+        android:textColor="@color/c1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="184dp"
+        android:layout_height="225dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:background="@drawable/category" />
+
+        <Button
+            android:id="@+id/btnCallCategoryManage"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/btn_bg3"
+            android:text="Category Manage"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="184dp"
+        android:layout_height="225dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView1"
+        app:layout_constraintTop_toTopOf="@+id/cardView1"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:background="@drawable/cupcakes" />
+
+        <Button
+            android:id="@+id/btnCallCupcakesItemManage"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="180dp"
+            android:text="Cupcake Manage"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.565"
+            tools:layout_editor_absoluteX="58dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="184dp"
+        android:layout_height="225dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="27dp"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:background="@drawable/orderlist"/>
+
+        <Button
+            android:id="@+id/btnCallViewOrders"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="180dp"
+            android:text="View Orders"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg3"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="639dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
